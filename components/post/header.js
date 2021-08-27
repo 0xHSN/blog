@@ -34,18 +34,18 @@ const Header = ({
         <span className="meta">
           <a
             className="author"
-            href="https://twitter.com/rauchg"
+            href="https://twitter.com/0xhsn"
             target="_blank"
           >
             <span className="img">
               <NextImage
-                src="/images/rauchg.png"
+                src="https://pbs.twimg.com/profile_images/1431051245733752838/JsyCLVqn_400x400.jpg"
                 width={25}
                 height={25}
                 layout="fixed"
               />
             </span>
-            rauchg
+            0xHSN
           </a>
 
           {isMounted ? (

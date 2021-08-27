@@ -1,5 +1,8 @@
 import Logo from "./logo";
 import Link from "next/link";
+import { FiTwitter } from 'react-icons/fi';
+import { FiGithub } from 'react-icons/fi';
+
 
 const Header = () => (
   <header>
@@ -10,11 +13,12 @@ const Header = () => (
     </Link>
 
     <nav>
-      <a className="src" target="_blank" href="https://github.com/rauchg/blog">
-        Source
-      </a>
-      <a className="follow" target="_blank" href="https://twitter.com/0xHSN">
-        Follow Me
+      <a className="icon" href="https://twitter.com/0xHSN">
+      <FiTwitter />
+      </a> 
+      
+      <a className="icon" target="_blank" href="https://github.com/0xHSN">
+        <FiGithub />
       </a>
     </nav>
 
@@ -33,7 +37,7 @@ const Header = () => (
         padding: 6px 10px;
         display: inline-block;
         text-decoration: none;
-        margin-right: 15px;
+        margin-right: 0px;
       }
 
       nav a.src {
@@ -56,14 +60,19 @@ const Header = () => (
         padding: 5px;
       }
 
+      a.icon {
+        color: #000;
+        font-size: 20px;
+      }
+
       @media (any-hover: hover) {
         a.logo:hover {
-          background-color: var(--link-highlight);
+           text-decoration: underline;
         }
 
-        a.logo:active {
-          background-color: #fff445;
-        }
+        a.icon:hover {
+          color: grey;
+       }
       }
 
       @media (min-width: 500px) {

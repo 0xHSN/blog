@@ -13,7 +13,7 @@ const Main = ({ children, headerActive }) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/steaming-bowl_1f35c.png"/>
-        <title>0xHSN - hasan's blog</title>
+        <title>0xHSN</title>
       </Head>
 
       <style jsx global>
