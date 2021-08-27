@@ -40,7 +40,7 @@ const Home = ({ posts, date }) => (
 
       ul li a {
         font-weight: bold;
-        color: var(--link-color);
+        color: black;
         text-decoration: none;
       }
 

@@ -13,7 +13,7 @@ const Header = () => (
       <a className="src" target="_blank" href="https://github.com/rauchg/blog">
         Source
       </a>
-      <a className="follow" target="_blank" href="https://twitter.com/rauchg">
+      <a className="follow" target="_blank" href="https://twitter.com/0xHSN">
         Follow Me
       </a>
     </nav>
