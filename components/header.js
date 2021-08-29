@@ -13,7 +13,7 @@ const Header = () => (
     </Link>
 
     <nav>
-      <a className="icon" href="https://twitter.com/0xHSN">
+      <a className="icon" target="_blank" href="https://twitter.com/0xHSN">
       <FiTwitter />
       </a> 
       

@@ -4,7 +4,6 @@ import typography from "../../css/typography";
 import colors from "../../css/colors";
 import nprogress from "../../css/nprogress";
 import Header from "../header";
-
 import "nprogress";
 
 const Main = ({ children, headerActive }) => {
@@ -30,7 +29,7 @@ const Main = ({ children, headerActive }) => {
       </style>
 
       <Header active={headerActive} />
-
+      
       {children}
 
       <style jsx>{`

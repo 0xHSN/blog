@@ -28,7 +28,7 @@ const Header = ({
         <title>{title}</title>
       </Head>
 
-      <h1>{title}</h1>
+      <h1 className="text-3xl font-bold">{title}</h1>
 
       <nav>
         <span className="meta">

@@ -38,7 +38,10 @@
     "unist-util-visit": "^2.0.3"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "autoprefixer": "^10.3.3",
+    "postcss": "^8.3.6",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.2.8"
   },
   "scripts": {
     "dev": "next dev -H 0.0.0.0",

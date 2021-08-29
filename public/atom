@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Guillermo Rauch</title>
+    <subtitle>Essays</subtitle>
+    <link href="https://rauchg.com/atom" rel="self"/>
+    <link href="https://rauchg.com/"/>
+    <updated>Aug 28, 2021</updated>
+    <id>https://rauchg.com/</id>
+    <author>
+      <name>Guillermo Rauch</name>
+      <email>rauchg@gmail.com</email>
+    </author>
+    
+        <entry>
+          <id>hello</id>
+          <title>First Blog!</title>
+          <link href="https://rauchg.com/2021/hello"/>
+          <updated>Aug 28, 2021</updated>
+        </entry>
+  </feed>
+

@@ -5,10 +5,6 @@ const style = css.global`
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-
-  a[href] {
-    color: var(--link-color);
-  }
 `;
 
 export default style;
