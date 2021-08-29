@@ -1,6 +1,7 @@
 import Layout from "../components/layouts/main";
 import Link from "next/link";
 import postsData from "../posts";
+
 const { posts } = postsData;
 
 export function getStaticProps() {
@@ -8,7 +9,7 @@ export function getStaticProps() {
     props: {
       posts: posts.map(post => ({
         ...post,
-        url: `${new Date(post.date).getFullYear()}/${post.id}`,
+        url: `blog/${post.id}`,
       })),
     },
   };
@@ -17,6 +18,27 @@ export function getStaticProps() {
 const Home = ({ posts, date }) => (
   <Layout>
     <ul>
+      <div class="px-4 sm:flex items-center space-y-4 sm:space-y-0 sm:space-x-4 pb-2">
+        <p class="text-xl font-semibold">いつか火影になりま。😏</p>
+      </div>
+      <section class="grid sm:grid-flow-col">
+        <a
+          class="flex flex-col px-4 py-2 hover:text-gray-700"
+          href="/ctf-toolkit"
+        >
+          <p class="text-lg font-semibold">CTF Toolkit</p>
+          <p class="text-sm font-medium">Tools & Scripts</p>
+        </a>
+        <a class="flex flex-col px-4 py-2 hover:text-gray-700" href="/whoami">
+          <p class="text-lg font-semibold">About</p>
+          <p class="text-sm font-medium">
+            Engineering at H1 ┊ CTF Player ┊ Foodie
+          </p>
+        </a>
+      </section>
+      <div class="px-4 sm:flex items-center space-y-4 sm:space-y-0 sm:space-x-4 pb-2">
+        <h2 class="text-xl font-semibold">Blog Posts</h2>
+      </div>
       {posts.map(post => (
         <li key={post.id}>
           <span>{post.date}</span>
@@ -26,7 +48,6 @@ const Home = ({ posts, date }) => (
         </li>
       ))}
     </ul>
-
     <style jsx>{`
       ul li {
         padding: 10px 15px;
