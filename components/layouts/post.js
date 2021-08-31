@@ -12,8 +12,8 @@ const Post = ({ tweets, children }) => (
     <style jsx>{`
       main {
         padding: 15px;
-        font-size: 18px;
-      }
+        font-size: 16px;
+        }
 
       article {
         scroll-margin-top: 50px;
