@@ -4,4 +4,24 @@ description: CTF Toolkit
 date: Aug 28, 2021
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+## Read pcap
+
+```
+sudo tcpdump -n -r password_cracking_filtered.pcap | awk -F" " '{print $3}' | sort | uniq -c | head
+```
+
+* `-n` skip DNS name lookups
+* `-r` read from packet capture file
+* `awk -F" " '{print $3}'` print the destination IP address and prot (the third space-separated field)
+* `sort` sort it!
+* `uniq -c` count the number of times the field appears in the capture
+* `head` only display the first 10 lines of output
+
+## Stablize shell
+
+1. `python -c 'import pty; pty.spawn(\"/bin/bash\")'"`
+2. ctrl Z
+3. `stty raw -echo`
+4. fg
+5. `export TERM=xterm`
+
