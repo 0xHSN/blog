@@ -4,7 +4,7 @@ description: CTF Toolkit
 date: Aug 28, 2021
 ---
 
-## Read pcap
+## read pcap
 
 ```
 sudo tcpdump -n -r password_cracking_filtered.pcap | awk -F" " '{print $3}' | sort | uniq -c | head
@@ -17,11 +17,13 @@ sudo tcpdump -n -r password_cracking_filtered.pcap | awk -F" " '{print $3}' | so
 * `uniq -c` count the number of times the field appears in the capture
 * `head` only display the first 10 lines of output
 
-## Stablize shell
+## Shells
+(pentest monkey)[https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+
+## stablize shell
 
 1. `python -c 'import pty; pty.spawn(\"/bin/bash\")'"`
 2. ctrl Z
 3. `stty raw -echo`
 4. fg
 5. `export TERM=xterm`
-
