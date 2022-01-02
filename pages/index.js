@@ -26,18 +26,18 @@ const Home = ({ posts, date }) => (
           className="flex flex-col px-4 py-2 hover:text-gray-700"
           href="/ctf-toolkit"
         >
-          <p className="text-lg font-semibold">CTF Toolkit</p>
-          <p className="text-sm font-medium">Tools & Scripts</p>
+          <p className="text-lg font-semibold">ctf toolkit</p>
+          <p className="text-sm font-medium">tools & scripts</p>
         </a>
         <a className="flex flex-col px-4 py-2 hover:text-gray-700" href="/whoami">
-          <p className="text-lg font-semibold">About</p>
+          <p className="text-lg font-semibold">about</p>
           <p className="text-sm font-medium">
-            Engineering at H1 ┊ CTFer 
+            engineering at H1 ┊ pro web surfer 
           </p>
         </a>
       </section>
       <div className="px-4 sm:flex items-center space-y-4 sm:space-y-0 sm:space-x-4 pb-2">
-        <h2 className="text-xl font-semibold">Blog Posts</h2>
+        <h2 className="text-xl font-semibold">blog posts</h2>
       </div>
       {posts.map(post => (
         <li key={post.id}>
