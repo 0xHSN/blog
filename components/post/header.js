@@ -45,7 +45,7 @@ const Header = ({
                 layout="fixed"
               />
             </span>
-            0xHSN
+            me
           </a>
 
           {isMounted ? (
