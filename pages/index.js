@@ -32,7 +32,7 @@ const Home = ({ posts, date }) => (
         <a className="flex flex-col px-4 py-2 hover:text-gray-700" href="/whoami">
           <p className="text-lg font-semibold">about</p>
           <p className="text-sm font-medium">
-            engineering at H1 ┊ pro web surfer 
+              engineering at H1 ┊ love ctfs and memes
           </p>
         </a>
       </section>
