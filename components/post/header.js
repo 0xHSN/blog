@@ -39,7 +39,7 @@ const Header = ({
           >
             <span className="img">
               <NextImage
-                src="https://pbs.twimg.com/profile_images/1431051245733752838/JsyCLVqn_400x400.jpg"
+                src="https://pbs.twimg.com/profile_images/1490483730321915904/uJcbMZA3_400x400.jpg"
                 width={25}
                 height={25}
                 layout="fixed"
